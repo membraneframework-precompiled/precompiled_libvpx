@@ -6,7 +6,7 @@ workflows:
   precompile:
     jobs:
       - elixir/precompile_for_macos_intel: &parameters
-          package-name: PACKAGE_NAME_HERE
+          package-name: libvpx
           expected-version: << pipeline.git.tag >>
           filters:
             branches:
